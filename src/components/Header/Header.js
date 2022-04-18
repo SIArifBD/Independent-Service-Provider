@@ -26,10 +26,10 @@ const Header = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link href="home#courses">Courses</Nav.Link>
-                            <Nav.Link href="home#checkout">Checkout</Nav.Link>
                         </Nav>
                         <Nav>
                             <Nav.Link as={Link} to="aboutUs">About</Nav.Link>
+                            <Nav.Link as={Link} to="blogs">Blogs</Nav.Link>
                             {
                                 user ?
                                     <button className='btn text-white text-decoration-none' onClick={handleSignOut}>Sign Out</button>

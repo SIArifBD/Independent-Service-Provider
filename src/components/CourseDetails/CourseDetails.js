@@ -8,7 +8,7 @@ const CourseDetails = () => {
             <h2>Welcome to detail: {courseId}</h2>
             <div className='text-center'>
                 <Link to="/checkout">
-                    <button className='btn btn-primary'>Proceed Checkout</button>
+                    <button className='btn btn-primary'>Checkout</button>
                 </Link>
             </div>
         </div>

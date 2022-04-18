@@ -51,7 +51,7 @@ const Register = () => {
 
                 <input type="password" name="password" id="" placeholder='Password' required />
                 <input onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" />
-                <label className={`ps-2 ${agree ? '' : 'text-danger'}`} htmlFor="terms">Accept Genius Car Terms and Conditions</label>
+                <label className={`ps-2 ${agree ? '' : 'text-danger'}`} htmlFor="terms">Accept Tutor Hiring Terms and Conditions</label>
                 <input
                     disabled={!agree}
                     className='w-50 mx-auto btn btn-primary mt-2'
