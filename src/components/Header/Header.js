@@ -29,10 +29,10 @@ const Header = () => {
                             <Nav.Link href="home#checkout">Checkout</Nav.Link>
                         </Nav>
                         <Nav>
-                            <Nav.Link as={Link} to="about">About</Nav.Link>
+                            <Nav.Link as={Link} to="aboutUs">About</Nav.Link>
                             {
                                 user ?
-                                    <button className='btn btn-link text-white text-decoration-none' onClick={handleSignOut}>sign out</button>
+                                    <button className='btn text-white text-decoration-none' onClick={handleSignOut}>Sign Out</button>
                                     :
                                     <Nav.Link as={Link} to="login">
                                         Login
