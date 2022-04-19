@@ -14,9 +14,10 @@ const Course = ({ course }) => {
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
                     <h5 className="card-title">Tittle: {title}</h5>
-                    <p className='card-text'>Qualitfication: {qualification}</p>
+                    <p className='card-text'>Qualification: {qualification}</p>
                     <p className="card-text">Description: {des}</p>
                     <p className='card-text'>Price: ${price}</p>
+                    {/* <a href="#" className="btn btn-primary">Checkout</a> */}
                     <button onClick={() => navigateToCourseDetail(id)} className='btn btn-primary'>Checkout: {title}</button>
                 </div>
             </div>

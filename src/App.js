@@ -12,34 +12,35 @@ import NotFound from './components/NotFound/NotFound';
 import CourseDetails from './components/CourseDetails/CourseDetails';
 import Course from './components/Course/Course';
 import Blogs from './components/Blogs/Blogs';
+import Courses from './components/Courses/Courses';
 
 function App() {
   return (
     <div className="App">
       <Header></Header>
       <Routes>
-        <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/home' element={<Home></Home>}></Route>
-        <Route path='/course' element={<Course></Course>}></Route>
-        <Route path='/course/:courseId' element={
+        <Route exact path='/' element={<Home></Home>}></Route>
+        <Route exact path='/home' element={<Home></Home>}></Route>
+        <Route exact path='/course' element={<Courses></Courses>}></Route>
+        <Route exact path='/course/:courseId' element={
           <RequireAuth>
             <CourseDetails></CourseDetails>
           </RequireAuth>
         }></Route>
-        <Route path='/aboutus' element={<AboutUs></AboutUs>}></Route>
-        <Route path='/login' element={<Login></Login>}></Route>
-        <Route path='/register' element={<Register></Register>}></Route>
-        <Route path='/checkout' element={
+        <Route exact path='/aboutus' element={<AboutUs></AboutUs>}></Route>
+        <Route exact path='/login' element={<Login></Login>}></Route>
+        <Route exact path='/register' element={<Register></Register>}></Route>
+        <Route exact path='/checkout' element={
           <RequireAuth>
             <Checkout></Checkout>
           </RequireAuth>
         }></Route>
-        <Route path='/blogs' element={
+        <Route exact path='/blogs' element={
           <RequireAuth>
             <Blogs></Blogs>
           </RequireAuth>
         }></Route>
-        <Route path='*' element={<NotFound></NotFound>}></Route>
+        <Route exact path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
